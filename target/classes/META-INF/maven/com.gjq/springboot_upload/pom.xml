@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gjq</groupId>
+  <artifactId>springboot_upload</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <dependencies>
+    	 <!-- springBoot的启动器.作用:支持全栈式的web开发，包括了tomcat和springMVC等jar -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>      
+    </dependency>
+    <!-- springBoot中的thymeleaf启动器 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+			<!-- DevTools的坐标 -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+    </dependency>
+    <dependency>
+  		<groupId>commons-fileupload</groupId>
+  		<artifactId>commons-fileupload</artifactId>
+  		<version>1.3.2</version>
+  	</dependency>
+  	<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.2</version> 
+</dependency>
+
+    </dependencies>
+    <properties>
+		   <!-- 对jdk版本的修改 -->
+		   <java.version>1.8</java.version>
+		   <!-- 修改thymeleaf版本,thymeleaf模板技术要求所有的标签必须要有结束标记 -->
+		   <maven-jar-plugin.version>2.6</maven-jar-plugin.version><!-- 加上这句就可以了 -->
+           <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+           <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
+           <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version> 
+     </properties>
+</project>
